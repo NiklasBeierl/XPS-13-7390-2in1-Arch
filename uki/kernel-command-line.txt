@@ -1,0 +1,1 @@
+BOOT_IMAGE=/boot/vmlinuz-linux root=/dev/mapper/intssd-root rw cryptdevice=UUID=4138cc27-f3f3-4810-a406-8df4d3cdafb4:cryptlvm resume=UUID=03e0528d-0718-4352-973c-99790a20f468 loglevel=3 quiet mem_sleep_default=deep

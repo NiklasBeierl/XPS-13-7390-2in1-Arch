@@ -1,0 +1,13 @@
+[Trigger]
+Type = File
+Operation = Install
+Operation = Upgrade
+Target = usr/lib/modules/*/vmlinuz
+Target = usr/lib/initcpio/*
+Target = boot/intel-ucode.img
+
+[Action]
+Description = Updating linux initcpios...
+When = PostTransaction
+Exec = /usr/local/share/libalpm/scripts/mkinitcpio-install
+NeedsTargets
